@@ -1,0 +1,114 @@
+tipos de functions 
+
+uma função é simplesmente um pedaço de codigo reutilizavel(quase como uma variavel mas com mais coisa dentro)
+
+declaration=> a que pode ser usada antes da sua declaração
+EX: function calAge(birthyear){
+return 2037 - birthyear;
+}
+expression=>basicamente o valor de uma função guardado em uma variavel(não pode ser chamada antes pq é tipo uma varialvel)
+EX:const calAge = function(birthyear){
+return 2037 - birthyear;
+}
+arrow function=>otimo para funçoes rapidas e pequenas
+EX: const calAge = birthyear => 2037 - birthyear
+
+closure function => função mais poderosa tem acesso a valores fora do escopo da função 
+EX: const somaAnonima = function(numero1){
+return(numero2) = > (numero1 + numero2)
+};
+const minhaclosure = somaAnonima(2);
+alert(minhaclosure(3));
+
+manter o codigo DRY = dont repeat youself => logicamente as funções são perfeitas para isso 
+
+params e argument 
+
+func blablabla(asdasd)<= params = basicamente uma variavel propia da func
+
+blablabla(123)<=argument = o q vc passa como valor para o param da func
+
+ARRAYS=>comandos importantes e o q eles fazem(menor n vou explicar o q é um array pow pera la tmb n sou ta merda assim)
+OS METODOS MAIS IMPORTANTES
+length=>corre o array contando o numero de casas e diz o tamanho dele
+
+fill=>preenche os elementos do array com um valor statico
+filter=>cria um array novo com todos os elementos q passaram no teste
+find=>retorna o primeiro elemento q passou naquele teste
+findindex=>retorna index do primeiro elemento q passou naquele teste
+foreach=>chama uma função em cadaelemento do array
+from=>cria um array de um objeto
+includes=>checka se um array possui um determinado elemento
+indexof=>procura pelo elemento desse index
+join=> junta todos os elementos do um array em uma string
+lastindexof=>mostra o index de um elemento correndo do final do array
+length=> pow preciso nem explicar só pensar no q significa length  e sim retorna em numeros
+
+pop=>remove o ultimo elemento do array e retorna esse elemento 
+prototype=>permite  adicionar propiedades e motodos a um array
+push=> add um novo elemento a um array
+
+
+slice=>seleciona uma parte de um array e retorna um novo array
+some=>checka se algum dos elementos do array passa no test
+sort=>arruma por ordem alfabetica o array
+splice=> add ou remove elementos de um array (primeira casa fala onde vao entrar os elementos o 
+segundo fala quantos elementos vao sair(lembrando q ele conta a partir do ultimo elemento q entrou)dps sao os elementos q vc quer adicionar
+splice(2, 0, "Lemon", "Kiwi"));
+tostring=>converte um array para string
+unshift=>add um elemento no começo do array de retorna sua length
+valueof=>retorna o valor primitivo do array
+
+OS 30+
+length=>corre o array contando o numero de casas e diz o tamanho dele
+concat=> juntoa dois arrays ou mais e retorna a junção desses arrays em um terceiro 
+constructor=>retorna a fuction q criou o objeto do array(não confundior com contructor de classe pfv)
+copyWithin=>copia elementos de um array e passa para outros
+entires=>retorna o valor de uma interação de um array
+every=>checka se todos os elementos do array passam em um test (???????)
+fill=>preenche os elementos do array com um valor statico
+filter=>cria um array novo com todos os elementos q passaram no teste
+find=>retorna o primeiro elemento q passou naquele teste
+findindex=>retorna index do primeiro elemento q passou naquele teste
+foreach=>chama uma função em cadaelemento do array
+from=>cria um array de um objeto
+includes=>checka se um array possui um determinado elemento
+indexof=>procura pelo elemento desse index
+isarray=>po serio so pode ser mais obvio se tiver uma interrogação no final
+join=> junta todos os elementos do um array em uma string
+keys=>retorna a interação do objeto do array contendo as keysdo array original(cara perguntar pro ian pq eu n entendi)
+lastindexof=>mostra o index de um elemento correndo do final do array
+length=> pow preciso nem explicar só pensar no q significa length  e sim retorna em numeros
+map=> cria um novo array chamndo a função para cada elemento 
+ex1:const numbers = [4, 9, 16, 25];
+const newArr = numbers.map(Math.sqrt) /// resultado é a raiz quadrada de todos os elementos
+ex2:const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(myFunction)
+function myFunction(num) {
+  return num * 10;
+}/// retorna todos os elementos multiplicados por 10
+pop=>remove o ultimo elemento do array e retorna esse elemento 
+prototype=>permite  adicionar propiedades e motodos a um array
+push=> add um novo elemento a um array
+reduce=> reduz os valores de um array a um valor unico indo da direita para a esquerda
+reducerigth=> mesma coisa só q ao contrário 
+reverse=> igual ao do tiktok/insta kkk reverte ordem dos valores de um array [1,2,3] vira [3,2,1]
+shift=>remove um elemento do array e retorna esse elemento(parecido com o pop())
+slice=>seleciona uma parte de um array e retorna um novo array
+some=>checka se algum dos elementos do array passa no test
+sort=>arruma por ordem alfabetica o array
+splice=> add ou remove elementos de um array (primeira casa fala onde vao entrar os elementos o 
+segundo fala quantos elementos vao sair(lembrando q ele conta a partir do ultimo elemento q entrou)dps sao os elementos q vc quer adicionar
+splice(2, 0, "Lemon", "Kiwi"));
+tostring=>converte um array para string
+unshift=>add um elemento no começo do array de retorna sua length
+valueof=>retorna o valor primitivo do array
+
+OBJECT////////////
+this =referencia todo ou qualquer valor dentro do objeto q ele está EX: calAge: function () {       /// tinha um vvalor birthYeah dentro do objeto
+    return 2037 - this.birthYeah;
+  },
+
+LOOPS///////
+continue =>pula da interação atual do array
+break=>quebra a interação por completo 

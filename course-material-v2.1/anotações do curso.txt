@@ -1,0 +1,83 @@
+js é uma linguagem de alto nivel oop de multi paradigmas(pode se usar diferentes stilos de programação)
+
+função do js dar toda a funcionalidade de uma aplicaçao(front e back) 
+
+objeto vs primitivas
+
+objeto:
+let me = {
+  name: 'jonas'
+  age: 30
+}
+primitivas:
+
+let firstname = 'jonas'
+let age = 30
+
+lembrando q const é imutavel mas isso só vale para valores primitivos então array e etc n cai nessa regra
+
+OS 7 TIPOS PRIMÁRIOS DE DATA
+1. Number: Floating point numbers � Used for decimals and integers
+2. String: Sequence of characters � Used for text
+3. Boolean: Logical type that can only be true or false � Used for taking decisions 
+4. Undefined: Value taken by a variable that is not yet defined (‘empty value’)
+5. Null: Also means ‘empty value’
+//////////////////////////////////////////////////////////////////////////////////////
+6. Symbol (ES2015): Value that is unique and cannot be changed [Not useful for now]///
+7. BigInt (ES2020): Larger integers than the Number type can hold/////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+booleans basicos
+and
+or
+not not
+ps: The !!(not not) is the repetition of the unary logical operator not(!) twice. The double negation(!!) operator calculates the truth value of a value. This operator returns a boolean value, which depends on the truthiness of the given expression.
+In general, logical not(!) determines the “truth” of what a value is not:
+
+The truth is that false is not true (that’s why !false results in true)
+The truth is that true is not false (that’s why !true results in false)
+
+convenções para nome de variaveis
+camelCase -> primeiras letras minusculas primeira letra de segunda palavra maiuscula
+pascalcase -> primeira letra de todas a palavras é maiuscula
+snakecase -> junta todas aas palavras com o underline
+kebabcase -> junta todas aas palavras com o traço (-) fica igual a um kebab
+TYPEOF -> operador q mostra o tipo de uma variavel
+2 ** 3 é 2 ao cubo
+
+
+//type conversion
+const inputyear = "1991";
+console.log(Number(inputyear));
+console.log(Number(inputyear) + 18);
+console.log(String(23));
+//type coercion
+console.log("im" + 23 + "years old"); isso vira strig
+console.log("1" - 23 + "years old"); isso retorna -22 years old
+
+basico de truthy e falsy
+console.log(Boolean(0)); //false
+console.log(Boolean(undefined)); //false
+console.log(Boolean("joans")); //truthy
+console.log(Boolean({})); //truthy
+console.log(Boolean("")); //falsy
+
+se passar de 3 elses ifs use switch pq vai começar a ficar ilegivel
+
+
+STATEMENTS VS EXPRESSIONS
+ statements=> sentences q se traduzem para ações ex: console.log
+expression=>produz valor ex:  3+4, true && false 
+ 
+QUAL Q DIFERENÇA DISSO: a diferença é que ele é aceita em lugares onde só expression  
+COMO FAZER UM ELSE IF NO TERNARY OPERATOR?
+const age = 23;
+age >= 18
+  ? console.log("i like drinking wine")
+  : console.log("i like drinking water");
+
+if(age >= 18){
+console.log("i like drinking wine")}
+else{
+console.log("i like drinking water");
+}

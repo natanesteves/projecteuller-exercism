@@ -1,0 +1,24 @@
+high level =>  menos recursos parar gerenciar mas tmb menos performatico 
+garbage collector => auto cleam das memorias feito pelo js 
+just in time compiled =>  acontece dentro da engine do js 
+multiparadigm => basicamente js pode ser programado de varias maneiras como:
+procedural(como estivemos programando ate agora)
+opp
+functional programming
+Prototype-based object oriented=> arr.push na vdd é um metodo do Array.Prototype q tem outros metodos
+first-class functions=> funçõers sao tratadas como variaveis
+Dynamic => att sozinha baseada no tipo da variavel
+
+Single threaded non bloking eventloop=> {
+    basicamente a engine(com todas as tasks do seu codigo) do js roda em um thread do processador 
+    então para o codigo não travar ao executar uma função demorada como fetch
+    ele adpata o non-bloking onde basicamente ele executa funções por tras(no eventloop) enquanto roda o principal
+     do seu codigo para n bloquear o thread    
+    }
+
+Engine=> {
+    a maneira como ela funciona é dividindo 
+    callstack=> onde é setado a ordem de execução 
+    heap=> onde a memoria(do computador) esta torado esse codigo
+    
+}

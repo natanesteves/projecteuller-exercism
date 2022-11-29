@@ -1,0 +1,6 @@
+PROBLEM SOLVE => 
+Regras
+1- analize o problemas todo e liste todas as suas variaveis para finalmente poder perguntar as questões certas 
+2-quebre o o problema em problemas menores (sub-problems)
+3- se n conseguir resolver pesquise o maximo possivel(google stackoverflow e etc)
+4-escrever o pseudo-code(escreve o codigo em um livro)
